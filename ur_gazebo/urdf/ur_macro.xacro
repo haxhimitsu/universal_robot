@@ -105,5 +105,19 @@
         <!--robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType-->
       </plugin>
     </gazebo>
+    <!-- Gazebo FT sensor plugin -->
+    <gazebo reference="wrist_3_joint">
+      <provideFeedback>true</provideFeedback>
+      <turnGravityOff>true</turnGravityOff>
+     </gazebo>
+    <gazebo>
+      <plugin name="ft_sensor_plugin" filename="libgazebo_ros_ft_sensor.so">
+      <updateRate>800.0</updateRate>
+      <topicName>ft_sensor/raw</topicName>
+      <gaussianNoise>0.0</gaussianNoise>
+      <jointName>wrist_3_joint</jointName>
+      </plugin>
+    </gazebo>
+  
   </xacro:macro>
 </robot>

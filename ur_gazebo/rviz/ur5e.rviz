@@ -5,11 +5,8 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /RobotModel1
-        - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /Pose1
       Splitter Ratio: 0.5
     Tree Height: 1117
   - Class: rviz/Selection
@@ -192,7 +189,7 @@ Visualization Manager:
       Shaft Length: 1
       Shaft Radius: 0.05000000074505806
       Shape: Axes
-      Topic: /end_effector_pose
+      Topic: /target_frame
       Unreliable: false
       Value: true
     - Acceleration_Scaling_Factor: 0.1
@@ -228,61 +225,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          base_link_inertia:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          flange:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          forearm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          shoulder_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          tool0:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          upper_arm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          world:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wrist_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          wrist_2_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          wrist_3_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -328,66 +270,26 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          base_link_inertia:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          flange:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          forearm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          shoulder_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          tool0:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          upper_arm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          world:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wrist_1_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          wrist_2_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          wrist_3_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
       Value: false
       Velocity_Scaling_Factor: 0.1
+    - Alpha: 1
+      Arrow Width: 0.5
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 0.10000000149011612
+      Force Color: 204; 51; 51
+      Hide Small Values: true
+      History Length: 1
+      Name: WrenchStamped
+      Queue Size: 10
+      Topic: /ft_sensor/raw
+      Torque Arrow Scale: 0.20000000298023224
+      Torque Color: 204; 204; 51
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -416,7 +318,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.2090020179748535
+      Distance: 4.1573896408081055
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -424,17 +326,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.018261848017573357
-        Y: -0.09813276678323746
-        Z: 0.44413888454437256
+        X: 0.19600924849510193
+        Y: 0.5458893179893494
+        Z: -0.12142857909202576
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7747981548309326
+      Pitch: 1.269797921180725
       Target Frame: <Fixed Frame>
-      Yaw: 2.530433416366577
+      Yaw: 3.1554439067840576
     Saved: ~
 Window Geometry:
   Displays:
@@ -456,5 +358,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1280
-  X: 5120
+  X: 0
   Y: 0
