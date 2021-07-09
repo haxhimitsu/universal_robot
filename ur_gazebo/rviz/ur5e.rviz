@@ -8,7 +8,7 @@ Panels:
         - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /WrenchStamped1
+        - /PoseArray1
       Splitter Ratio: 0.5
     Tree Height: 1117
   - Class: rviz/Selection
@@ -139,9 +139,9 @@ Visualization Manager:
           Value: false
         flange:
           Value: true
-        force_link:
-          Value: true
         forearm_link:
+          Value: true
+        model_origin:
           Value: true
         shoulder_link:
           Value: true
@@ -178,8 +178,8 @@ Visualization Manager:
                           flange:
                             tool0:
                               {}
-                          force_link:
-                            {}
+            model_origin:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -296,6 +296,43 @@ Visualization Manager:
       Torque Color: 204; 204; 51
       Unreliable: false
       Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /my_marker_array
+      Name: MarkerArray
+      Namespaces:
+        0: true
+        1: true
+        10: true
+        11: true
+        12: true
+        2: true
+        3: true
+        4: true
+        5: true
+        6: true
+        7: true
+        8: true
+        9: true
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.30000001192092896
+      Axes Length: 0.009999999776482582
+      Axes Radius: 0.0010000000474974513
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: PoseArray
+      Queue Size: 10
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Axes
+      Topic: /my_pose_array
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -324,7 +361,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 6.935968399047852
+      Distance: 1.4205259084701538
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -332,17 +369,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.2829321026802063
-        Y: 0.19002726674079895
-        Z: 0.15241506695747375
+        X: 0.6768402457237244
+        Y: 0.4045516848564148
+        Z: 0.3022922873497009
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.47479867935180664
+      Pitch: 0.6597983241081238
       Target Frame: <Fixed Frame>
-      Yaw: 2.855447769165039
+      Yaw: 3.140456199645996
     Saved: ~
 Window Geometry:
   Displays:
