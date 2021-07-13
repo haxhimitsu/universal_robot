@@ -8,7 +8,8 @@ Panels:
         - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /PoseArray1
+        - /Pose1
+        - /Pose2
       Splitter Ratio: 0.5
     Tree Height: 1117
   - Class: rviz/Selection
@@ -333,6 +334,22 @@ Visualization Manager:
       Topic: /my_pose_array
       Unreliable: false
       Value: true
+    - Alpha: 1
+      Axes Length: 0.10000000149011612
+      Axes Radius: 0.0010000000474974513
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: Pose
+      Queue Size: 10
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Axes
+      Topic: /end_effector_pose
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -361,7 +378,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.4205259084701538
+      Distance: 2.2196900844573975
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -369,17 +386,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.6768402457237244
-        Y: 0.4045516848564148
-        Z: 0.3022922873497009
+        X: 0.6740824580192566
+        Y: 0.2849471867084503
+        Z: 0.5062130689620972
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6597983241081238
+      Pitch: 0.24979868531227112
       Target Frame: <Fixed Frame>
-      Yaw: 3.140456199645996
+      Yaw: 3.5054571628570557
     Saved: ~
 Window Geometry:
   Displays:
