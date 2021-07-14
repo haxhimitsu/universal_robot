@@ -58,6 +58,9 @@
     -->
     <xacro:include filename="$(find ur_description)/urdf/inc/ur_macro.xacro"/>
 
+    <xacro:include filename="$(find polsh_path_plan)/urdf/model_mount.xacro" />
+    <xacro:include filename="$(find polsh_path_plan)/urdf/kamaboko.xacro" />
+    <xacro:include filename="$(find polsh_path_plan)/urdf/kamaboko_outor.xacro" />
 
     <!-- Instantiate model for the REAL robot. -->
     <xacro:ur_robot
@@ -118,6 +121,10 @@
       <jointName>wrist_3_joint</jointName>
       </plugin>
     </gazebo>
+
+  <xacro:model_mount parent="wrist_3_link" prefix="mount_base" xyz = "0 0 0.00"/>
+  <xacro:kamaboko parent = "mount_base_link" prefix = "model" xyz = "0 0 0.07"/>
+  <xacro:kamaboko_outor parent = "model_link" prefix = "model_out" xyz = "0 0 0.00"/>
   
   </xacro:macro>
 </robot>
