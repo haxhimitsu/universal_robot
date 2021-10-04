@@ -62,6 +62,7 @@
     <xacro:include filename="$(find polsh_path_plan)/urdf/kamaboko.xacro" />
     <xacro:include filename="$(find polsh_path_plan)/urdf/kamaboko_outor.xacro" />
     <xacro:include filename="$(find polsh_path_plan)/urdf/sanding_machine.xacro" />
+    <xacro:include filename="$(find polsh_path_plan)/urdf/ycam3d-10m.xacro" />
     <!-- Instantiate model for the REAL robot. -->
     <xacro:ur_robot
       prefix="${prefix}"
@@ -126,6 +127,7 @@
   <xacro:kamaboko parent = "mount_base_link" prefix = "model" xyz = "0 0 0.07"/>
   <xacro:kamaboko_outor parent = "model_link" prefix = "model_out" xyz = "0 0 0.00"/>
   <xacro:sanding_machine parent = "base_link" prefix = "sand_origin" xyz = "-0.14147 0.647 0.3"/>
+  <xacro:ycam3d-10m parent = "base_link" prefix = "ycam3d-10m_origin" xyz = "0.371 0.9408 0.350"/>
   <!-- smooth collision version -->
   <!-- <xacro:sanding_machine parent = "base_link" prefix = "sand_origin" xyz = "-0.14147 0.6465 0.3"/> -->
   </xacro:macro>
