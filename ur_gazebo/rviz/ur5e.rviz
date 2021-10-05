@@ -31,7 +31,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: PointCloud2
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -142,6 +142,15 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        ycam3d-10m_origin_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ycam_cp_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -187,6 +196,10 @@ Visualization Manager:
           Value: true
         wrist_3_link:
           Value: true
+        ycam3d-10m_origin_link:
+          Value: true
+        ycam_cp_link:
+          Value: true
       Marker Alpha: 1
       Marker Scale: 0.15000000596046448
       Name: TF
@@ -216,6 +229,9 @@ Visualization Manager:
               {}
             sand_origin_link:
               {}
+            ycam3d-10m_origin_link:
+              ycam_cp_link:
+                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -509,6 +525,34 @@ Visualization Manager:
       Topic: /end_effector_pose
       Unreliable: false
       Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /ycm_points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -537,7 +581,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.5370750427246094
+      Distance: 1.7476047277450562
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -545,17 +589,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -0.2988969683647156
-        Y: -0.044901713728904724
-        Z: 0.32345762848854065
+        X: -0.1836082637310028
+        Y: 0.2237194925546646
+        Z: 0.743061900138855
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.20479732751846313
+      Pitch: 0.5047971606254578
       Target Frame: <Fixed Frame>
-      Yaw: 2.820458173751831
+      Yaw: 3.3804593086242676
     Saved: ~
 Window Geometry:
   Displays:
