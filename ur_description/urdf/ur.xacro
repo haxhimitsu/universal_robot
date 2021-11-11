@@ -44,7 +44,7 @@
      <xacro:kamaboko_outor parent = "model_link" prefix = "model_out" xyz = "0 0 0.00"/>
      <xacro:sanding_machine parent = "base_link" prefix = "sand_origin" xyz = "-0.14147 ${0.643} 0.3"/>
      <!-- <xacro:ycam3d-10m parent = "base_link" prefix = "ycam3d-10m_origin" xyz = "${0.2775-0.015} ${0.9408+0.235} ${0.481-0.015}"/> -->
-     <xacro:ycam3d-10m parent = "base_link" prefix = "ycam3d-10m_origin" xyz = "${0.2775-0.015} ${0.9408+0.235} ${0.485-0.015}"/>
+     <xacro:ycam3d-10m parent = "base_link" prefix = "ycam3d-10m_origin" xyz = "${0.2775-0.015} ${0.9306+0.235+0.005} ${0.485-0.015}"/>
      
      <!-- smooth collision version -->
      <!-- <xacro:sanding_machine parent = "base_link" prefix = "sand_origin" xyz = "-0.14147 0.6465 0.3"/> -->
