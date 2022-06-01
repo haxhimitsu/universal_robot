@@ -5,6 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /RobotModel1
+        - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
         - /PoseArray1
@@ -86,6 +87,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        mocap_origin_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         model_link:
           Alpha: 1
           Show Axes: false
@@ -101,6 +106,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        obj_origin_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         sand_origin_link:
           Alpha: 1
           Show Axes: false
@@ -175,13 +184,21 @@ Visualization Manager:
           Value: false
         flange:
           Value: true
+        force_link:
+          Value: true
         forearm_link:
+          Value: true
+        mocap_origin_link:
           Value: true
         model_link:
           Value: true
-        model_out_link:
+        model_origin:
           Value: true
+        model_out_link:
+          Value: false
         mount_base_link:
+          Value: true
+        obj_origin_link:
           Value: true
         sand_origin_link:
           Value: true
@@ -228,12 +245,18 @@ Visualization Manager:
                           flange:
                             tool0:
                               {}
+                          force_link:
+                            {}
                           mount_base_link:
                             model_link:
                               model_out_link:
                                 {}
-            sand_origin_link:
+            model_origin:
               {}
+            sand_origin_link:
+              mocap_origin_link:
+                obj_origin_link:
+                  {}
             ycam3d-10m_origin_link:
               ycam_cp_link:
                 ycam_cp_bound:
@@ -270,8 +293,6 @@ Visualization Manager:
       MoveIt_Planning_Time: 5
       MoveIt_Use_Cartesian_Path: false
       MoveIt_Use_Constraint_Aware_IK: false
-      MoveIt_Warehouse_Host: 127.0.0.1
-      MoveIt_Warehouse_Port: 33829
       MoveIt_Workspace:
         Center:
           X: 0
@@ -498,7 +519,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.20898064970970154
+      Distance: 0.14696171879768372
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -506,17 +527,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -0.06399674713611603
-        Y: 0.5574945211410522
-        Z: 0.5667323470115662
+        X: 0.31448280811309814
+        Y: 0.6607797741889954
+        Z: 0.7596405148506165
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.04979794844985008
+      Pitch: 0.43479782342910767
       Target Frame: <Fixed Frame>
-      Yaw: 2.7904725074768066
+      Yaw: 6.120504379272461
     Saved: ~
 Window Geometry:
   Displays:
